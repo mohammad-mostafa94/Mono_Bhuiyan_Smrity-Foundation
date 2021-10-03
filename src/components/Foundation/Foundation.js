@@ -8,11 +8,13 @@ const Foundation = () => {
     const [list , setList] = useState([]);
 
     useEffect(()=>{
+        // json  file by collected from public folder
         fetch("./member-info.json")
         .then(res=> res.json())
         .then(data=> setMembers(data));
     },[]);
 
+    // list button
     const buttonHandle = added =>{
         const newList = [...list, added];
         setList(newList);
@@ -29,6 +31,7 @@ const Foundation = () => {
                 }
                 
             </div>
+            
             <div className="list">
                 <List list = {list}></List>
             </div>
