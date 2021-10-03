@@ -1,0 +1,14 @@
+.member-container {
+    margin: 10px;
+    background-color: cadetblue;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.img-style {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}

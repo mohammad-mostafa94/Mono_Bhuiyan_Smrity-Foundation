@@ -1,0 +1,14 @@
+.foundation-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.list {
+    background-color: aquamarine;
+    padding: 30px;
+    top: 0;
+    height: 30%;
+    position: sticky;
+    border-radius: 15px;
+    margin: 15px;
+}
