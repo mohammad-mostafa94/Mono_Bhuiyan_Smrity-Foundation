@@ -4,5 +4,5 @@ Live website Link:https://mono-bhuiyan-smrity-foundation.netlify.app/
 
 ## Properties of website
 
-### 1.This website contain a organizational information
+###  - This website contain a organizational information
 
