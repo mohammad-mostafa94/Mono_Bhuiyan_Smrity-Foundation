@@ -4,36 +4,36 @@ import Member from '../Member/Member';
 import './Foundation.css';
 
 const Foundation = () => {
-    const [members,setMembers] = useState([]);
-    const [list , setList] = useState([]);
+    const [members, setMembers] = useState([]);
+    const [list, setList] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         // json  file by collected from public folder
         fetch("./member-info.json")
-        .then(res=> res.json())
-        .then(data=> setMembers(data));
-    },[]);
+            .then(res => res.json())
+            .then(data => setMembers(data));
+    }, []);
 
     // list button
-    const buttonHandle = added =>{
+    const buttonHandle = added => {
         const newList = [...list, added];
         setList(newList);
     };
     return (
         <div className="foundation-container">
-            <div> 
+            <div>
                 {
-                    members.map(member => <Member 
-                    buttonHandle = {buttonHandle}
-                    key = {member.id}
-                    member = {member}
+                    members.map(member => <Member
+                        buttonHandle={buttonHandle}
+                        key={member.id}
+                        member={member}
                     ></Member>)
                 }
-                
+
             </div>
-            
+
             <div className="list">
-                <List list = {list}></List>
+                <List list={list}></List>
             </div>
         </div>
     );

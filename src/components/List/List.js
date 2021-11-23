@@ -10,7 +10,7 @@ const List = (props) => {
         totalPerson = totalPerson + 1;
     }
     return (
-        <div className= "list-container">
+        <div className="list-container">
             <h1 className="text-center mb-2">List</h1>
             <h6>Total Amount: {donation}</h6>
             <h6>Total Added person : {totalPerson} </h6>
